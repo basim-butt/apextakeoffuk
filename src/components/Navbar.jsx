@@ -103,8 +103,8 @@ export default function Navbar() {
             </div>
 
             <div className="topbar-right">
-              <a href="mailto:quotes@apextakeoff.co.uk" className="topbar-link">
-                <span>✉️</span> quotes@apextakeoff.co.uk
+              <a href="mailto:info@apextakeoff.uk" className="topbar-link">
+                <span>✉️</span> info@apextakeoff.uk
               </a>
             </div>
           </div>

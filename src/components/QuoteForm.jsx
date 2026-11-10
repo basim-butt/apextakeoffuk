@@ -57,7 +57,7 @@ export default function QuoteForm() {
     const timer = setTimeout(() => controller.abort(), 2800)
 
     try {
-      await fetch('https://formsubmit.co/ajax/quotes@apextakeoff.co.uk', {
+      await fetch('https://formsubmit.co/ajax/info@apextakeoff.uk', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -123,7 +123,7 @@ export default function QuoteForm() {
                 ⚡ TIGHT TENDER DEADLINE?
               </div>
               <p style={{ color: '#cbd5e1', fontSize: '0.86rem', margin: 0 }}>
-                Need your BOQ or takeoff within 24 hours? Mention your return deadline below or email <strong>quotes@apextakeoff.co.uk</strong> for priority fast-track scheduling.
+                Need your BOQ or takeoff within 24 hours? Mention your return deadline below or email <strong>info@apextakeoff.uk</strong> for priority fast-track scheduling.
               </p>
             </div>
           </div>

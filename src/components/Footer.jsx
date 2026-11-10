@@ -108,8 +108,8 @@ export default function Footer() {
             <div className="footer-contact-row">
               <span className="icon">✉️</span>
               <div>
-                <a href="mailto:quotes@apextakeoff.co.uk" style={{ color: '#e2e8f0' }}>
-                  quotes@apextakeoff.co.uk
+                <a href="mailto:info@apextakeoff.uk" style={{ color: '#e2e8f0' }}>
+                  info@apextakeoff.uk
                 </a>
               </div>
             </div>
