@@ -51,11 +51,6 @@ export default function Hero() {
       {/* Foreground Content */}
       <div className="container hero-content-container">
         <div className="hero-content">
-          {/* Trust Badge */}
-          <div className="hero-badge">
-            <span className="flag-emoji">🇬🇧</span> RICS NRM2 & SMM7 Standard Measurement
-          </div>
-
           {/* High-Impact Slogan */}
           <h1 className="hero-tagline">
             Bid Sharper. <span className="hero-tagline-white">Build Smarter.</span>

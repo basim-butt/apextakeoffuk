@@ -106,23 +106,19 @@ export default function Navbar() {
           <div className="topbar-inner">
             <div className="topbar-left">
               <span className="topbar-item highlight-item">
-                <span className="star-icon">★</span> Serving Contractors & Developers Across England, Scotland & Wales
+                <span className="star-icon">★</span> Serving UK Contractors Nationwide
               </span>
               <span className="topbar-divider">•</span>
               <span className="topbar-item">
-                UK Office: <strong>8 Duncannon St, London WC2N</strong>
-              </span>
-              <span className="topbar-divider">•</span>
-              <span className="topbar-item">
-                Mon–Fri: 8:00am–6:00pm GMT
+                London WC2N
               </span>
             </div>
 
             <div className="topbar-right">
-              <span className="guarantee-pill">RICS NRM2 Compliant</span>
               <a href="tel:+442079460192" className="topbar-link phone-link">
                 <span>📞</span> +44 (0) 20 7946 0192
               </a>
+              <span className="topbar-divider">•</span>
               <a href="mailto:quotes@apextakeoff.co.uk" className="topbar-link">
                 <span>✉️</span> quotes@apextakeoff.co.uk
               </a>
