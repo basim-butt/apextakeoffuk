@@ -80,7 +80,7 @@ export default function Navbar() {
     { label: 'Work Packages', id: 'trades' },
     { label: 'NRM2 Standards', id: 'standards' },
     { label: 'How It Works', id: 'process' },
-    { label: 'Why Apex', id: 'why-us' },
+    { label: 'Why Us', id: 'why-us' },
     { label: 'Contact', id: 'quote' },
   ]
 
