@@ -89,16 +89,16 @@ export default function QuoteForm() {
           <div className="quote-left-info">
             <div className="section-tag navy">Free UK Project Review</div>
             <h3>
-              Submit Your Plans & Receive A Fast Fixed-Price Fee Proposal
+              Submit Your Plans & Receive A Fast Fee Proposal
             </h3>
             <p>
-              Upload your blueprints, architectural sets, and scope specifications. Our senior quantity surveyors review your drawings immediately and provide a guaranteed flat-rate proposal within 1 to 2 hours.
+              Upload your blueprints, architectural sets, and scope specifications. Our senior quantity surveyors review your drawings immediately and provide a comprehensive fee proposal within 1 to 2 hours.
             </p>
 
             <div className="quote-bullets">
               <div className="quote-bullet-item">
                 <span className="icon">✓</span>
-                <span>Guaranteed fixed fee — no hourly overruns or unexpected costs</span>
+                <span>Transparent fee proposal — no unexpected costs or hidden fees</span>
               </div>
               <div className="quote-bullet-item">
                 <span className="icon">✓</span>

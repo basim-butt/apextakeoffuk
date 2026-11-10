@@ -6,7 +6,7 @@ export default function WhyUs() {
     { feature: 'Senior Chartered Review', apex: '100% Guaranteed', inhouse: 'Dependent on staff', freelance: 'Rarely audited' },
     { feature: 'Software Licensing Costs', apex: '£0 (Included)', inhouse: '£12,000+/year', freelance: '£0' },
     { feature: 'RICS NRM2 & BCIS Rates', apex: 'Standard UK-Wide', inhouse: 'Manual research', freelance: 'Outdated rates' },
-    { feature: 'Fixed Fee Guarantee', apex: 'Upfront in 1-2 Hours', inhouse: 'High fixed salary', freelance: 'Hourly overruns' },
+    { feature: 'Upfront Fee Proposal', apex: 'Delivered in 1-2 Hours', inhouse: 'High overhead costs', freelance: 'Hourly overruns' },
     { feature: 'Deliverable Formats', apex: 'Unlocked Excel + Markups + RFI', inhouse: 'Varies by staff', freelance: 'Often messy / locked' },
   ]
 

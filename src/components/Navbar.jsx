@@ -98,7 +98,7 @@ export default function Navbar() {
               </span>
               <span className="topbar-divider topbar-hide-sm">•</span>
               <span className="topbar-item topbar-hide-sm">
-                London WC2N
+                100 Oxford St, London W1D
               </span>
             </div>
 

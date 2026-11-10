@@ -53,7 +53,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#why-us" onClick={(e) => { e.preventDefault(); scrollTo('why-us') }}>
-                  Why Apex
+                  Why Us
                 </a>
               </li>
               <li>
@@ -96,10 +96,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="footer-col-title">UK Contact</h4>
+            <h4 className="footer-col-title">Get In Touch</h4>
             <div className="footer-contact-row">
               <span className="icon">📍</span>
-              <div>8 Duncannon Street, London, WC2N 4JF, UK</div>
+              <div>
+                100 Oxford Street, London<br />
+                Greater London, W1D 1LL<br />
+                United Kingdom
+              </div>
             </div>
             <div className="footer-contact-row">
               <span className="icon">✉️</span>
@@ -118,7 +122,7 @@ export default function Footer() {
 
         <div className="footer-bottom-bar">
           <div className="footer-bottom-inner">
-            <div>© {new Date().getFullYear()} Apex Takeoff UK. All rights reserved. Registered in England & Wales.</div>
+            <div>© {new Date().getFullYear()} Apex Takeoff UK. All rights reserved.</div>
             <div style={{ display: 'flex', gap: '20px' }}>
               <a href="#privacy" onClick={(e) => e.preventDefault()}>
                 Privacy Policy

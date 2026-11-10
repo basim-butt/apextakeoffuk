@@ -18,7 +18,7 @@ export default function QuickEstimator() {
         <div className="tool-bar-inner">
           <div className="tool-bar-heading">
             <h3>⚡ Instant UK Tender Scope & Turnaround Calculator</h3>
-            <p>Select your scheme details for an immediate turnaround proposal & fixed-price quote.</p>
+            <p>Select your scheme details for an immediate turnaround proposal & quote.</p>
           </div>
 
           <div className="tool-bar-inputs">
@@ -49,7 +49,7 @@ export default function QuickEstimator() {
             </select>
 
             <button className="btn btn-red" onClick={scrollToQuote}>
-              Get a Fixed Quote →
+              Get a Quote →
             </button>
           </div>
         </div>

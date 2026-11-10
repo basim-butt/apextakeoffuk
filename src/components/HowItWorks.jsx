@@ -9,8 +9,8 @@ export default function HowItWorks() {
     },
     {
       step: '02',
-      title: 'Receive Fixed Quote in 1-2 Hours',
-      desc: 'Our senior chartered surveyors review your drawings and provide a fixed-price fee proposal with an agreed delivery date and zero obligation.',
+      title: 'Receive Quote in 1-2 Hours',
+      desc: 'Our senior chartered surveyors review your drawings and provide a comprehensive fee proposal with an agreed delivery date and zero obligation.',
     },
     {
       step: '03',
