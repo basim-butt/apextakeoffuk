@@ -295,7 +295,7 @@ export default function QuoteForm() {
                     style={{ width: '100%', padding: '14px', fontSize: '1rem' }}
                     disabled={loading}
                   >
-                    {loading ? 'Submitting Drawings…' : 'Submit Plans For Free BOQ Quote →'}
+                    {loading ? 'Submitting Drawings…' : 'Submit Plans For Free Quote →'}
                   </button>
                 </form>
               </>

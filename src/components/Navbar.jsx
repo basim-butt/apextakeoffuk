@@ -36,27 +36,33 @@ export function BrandLogo() {
           strokeWidth="1.8"
         />
 
-        {/* British Shield Inset Heraldry & Apex Geometry */}
+        {/* UK Union Jack Shield Inset & Apex Geometry */}
         <g clipPath="url(#shieldApexExact)">
-          {/* Subtle Surveying Grid */}
-          <line x1="4" y1="12" x2="50" y2="12" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
-          <line x1="4" y1="22" x2="50" y2="22" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
-          <line x1="4" y1="32" x2="50" y2="32" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
-          <line x1="16" y1="4" x2="16" y2="40" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
-          <line x1="38" y1="4" x2="38" y2="40" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
+          {/* Royal Navy Blue Base */}
+          <rect x="0" y="0" width="54" height="45" fill="#012169" />
 
-          {/* St George / British Cross Backdrop */}
-          <rect x="24.5" y="0" width="5" height="45" fill="#ffffff" />
-          <rect x="0" y="19" width="54" height="5" fill="#ffffff" />
-          <rect x="25.5" y="0" width="3" height="45" fill="url(#apexRedGrad)" />
-          <rect x="0" y="20" width="54" height="3" fill="url(#apexRedGrad)" />
+          {/* White Saltire Diagonals (St Andrew) */}
+          <line x1="0" y1="0" x2="54" y2="45" stroke="#ffffff" strokeWidth="6.5" />
+          <line x1="54" y1="0" x2="0" y2="45" stroke="#ffffff" strokeWidth="6.5" />
+
+          {/* Red Saltire Diagonals (St Patrick) */}
+          <line x1="0" y1="0" x2="54" y2="45" stroke="#dc2626" strokeWidth="2.4" />
+          <line x1="54" y1="0" x2="0" y2="45" stroke="#dc2626" strokeWidth="2.4" />
+
+          {/* White St George Cross */}
+          <rect x="22.5" y="0" width="9" height="45" fill="#ffffff" />
+          <rect x="0" y="18" width="54" height="9" fill="#ffffff" />
+
+          {/* Red St George Cross */}
+          <rect x="24.5" y="0" width="5" height="45" fill="url(#apexRedGrad)" />
+          <rect x="0" y="20" width="54" height="5" fill="url(#apexRedGrad)" />
 
           {/* Triangular Apex / Surveying Peak Prism */}
-          <polygon points="27,6 44,28 36,28 27,16 18,28 10,28" fill="#ffffff" opacity="0.9" />
-          <polygon points="27,9 41,27 34,27 27,18 20,27 13,27" fill="url(#apexRedGrad)" />
+          <polygon points="27,5 44,27 36,27 27,15 18,27 10,27" fill="#ffffff" opacity="0.95" />
+          <polygon points="27,8 41,25 34,25 27,17 20,25 13,25" fill="url(#apexRedGrad)" />
 
           {/* Gold Surveying Target Center */}
-          <circle cx="27" cy="27" r="3" fill="#f59e0b" stroke="#ffffff" strokeWidth="1" />
+          <circle cx="27" cy="27" r="3.2" fill="#f59e0b" stroke="#ffffff" strokeWidth="1.2" />
         </g>
       </svg>
 
