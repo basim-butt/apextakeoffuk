@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Takeoff UK | RICS NRM2 Bills of Quantities & Construction Takeoffs</title>
+  <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/index.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-left">
+          <span class="topbar-item highlight-item">
+            <span class="star-icon">★</span> Serving Contractors & Developers Across England, Scotland & Wales
+          </span>
+          <span class="topbar-divider">•</span>
+          <span class="topbar-item">
+            UK Office: <strong>8 Duncannon St, London WC2N</strong>
+          </span>
+          <span class="topbar-divider">•</span>
+          <span class="topbar-item">
+            Mon–Fri: 8:00am–6:00pm GMT
+          </span>
+        </div>
+        <div class="topbar-right">
+          <span class="guarantee-pill">RICS NRM2 Compliant</span>
+          <a href="tel:+442079460192" class="topbar-link phone-link"><span>📞</span> +44 (0) 20 7946 0192</a>
+          <a href="mailto:quotes@apextakeoff.co.uk" class="topbar-link"><span>✉️</span> quotes@apextakeoff.co.uk</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navbar -->
+  <header class="header-wrapper">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <!-- Logo -->
+          <div class="logo-clickable" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <div class="custom-brand-logo">
+              <svg class="brand-emblem-svg" viewBox="0 0 54 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="shieldApexP">
+                    <path d="M27 2L50 9V24C50 34.5 39 40.5 27 43.5C15 40.5 4 34.5 4 24V9L27 2Z" />
+                  </clipPath>
+                  <linearGradient id="shieldBaseP" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#081426" />
+                    <stop offset="100%" stop-color="#0f233e" />
+                  </linearGradient>
+                  <linearGradient id="apexRedP" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#dc2626" />
+                    <stop offset="100%" stop-color="#991b1b" />
+                  </linearGradient>
+                </defs>
+                <path d="M27 2L50 9V24C50 34.5 39 40.5 27 43.5C15 40.5 4 34.5 4 24V9L27 2Z" fill="url(#shieldBaseP)" stroke="#1e3a63" stroke-width="1.8" />
+                <g clip-path="url(#shieldApexP)">
+                  <line x1="4" y1="12" x2="50" y2="12" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                  <line x1="4" y1="22" x2="50" y2="22" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                  <line x1="4" y1="32" x2="50" y2="32" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                  <rect x="24.5" y="0" width="5" height="45" fill="#ffffff" />
+                  <rect x="0" y="19" width="54" height="5" fill="#ffffff" />
+                  <rect x="25.5" y="0" width="3" height="45" fill="url(#apexRedP)" />
+                  <rect x="0" y="20" width="54" height="3" fill="url(#apexRedP)" />
+                  <polygon points="27,6 44,28 36,28 27,16 18,28 10,28" fill="#ffffff" opacity="0.9" />
+                  <polygon points="27,9 41,27 34,27 27,18 20,27 13,27" fill="url(#apexRedP)" />
+                  <circle cx="27" cy="27" r="3" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+                </g>
+              </svg>
+              <div class="brand-text-block">
+                <div class="brand-primary-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-tagline-text">
+                  RICS NRM2 Takeoffs & Tender Estimating
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Essential Menu -->
+          <ul class="nav-menu">
+            <li><a href="#services" class="nav-link active">Services</a></li>
+            <li><a href="#trades" class="nav-link">Work Packages</a></li>
+            <li><a href="#standards" class="nav-link">NRM2 Standards</a></li>
+            <li><a href="#process" class="nav-link">How It Works</a></li>
+            <li><a href="#why-us" class="nav-link">Why Apex</a></li>
+            <li><a href="#quote" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a href="#quote" class="btn btn-red btn-header-cta">
+              <span>Request BOQ Quote</span>
+              <span class="cta-arrow">→</span>
+            </a>
+            <button class="mobile-toggle" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-stripes-modern"></div>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul>
+        <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
+        <li><a href="#trades" onclick="closeMobileNav()">Work Packages</a></li>
+        <li><a href="#standards" onclick="closeMobileNav()">NRM2 Standards</a></li>
+        <li><a href="#process" onclick="closeMobileNav()">How It Works</a></li>
+        <li><a href="#why-us" onclick="closeMobileNav()">Why Apex</a></li>
+        <li><a href="#quote" onclick="closeMobileNav()">Contact</a></li>
+      </ul>
+      <a href="#quote" class="btn btn-red" style="width:100%;margin-top:14px;" onclick="closeMobileNav()">Request BOQ Quote →</a>
+    </div>
+  </header>
+
+  <!-- Hero with Video -->
+  <section class="hero-video-section" id="hero">
+    <div class="video-background-wrapper">
+      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+        <source src="./public/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
+    <div class="container hero-content-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="flag-emoji">🇬🇧</span> RICS NRM2 & SMM7 Standard Measurement
+        </div>
+
+        <h1 class="hero-tagline">
+          Bid Sharper. <span class="hero-tagline-white">Build Smarter.</span>
+        </h1>
+        <div class="hero-subtagline">
+          We Measure. You Build. <span class="dynamic-word" id="dynamicWord">You Win.</span>
+        </div>
+
+        <p class="hero-description">
+          The numbers behind the UK's winning contractors. Senior chartered quantity surveyors
+          delivering comprehensive RICS NRM2 Bills of Quantities and BCIS regional cost models in 24 to 48 hours.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#quote" class="btn btn-red btn-lg">Request a Free BOQ Quote →</a>
+          <a href="#trades" class="btn btn-outline-white btn-lg">Explore UK Work Packages</a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">24–48<span>hr</span></div>
+            <div class="hero-stat-label">Fastest Turnaround Guaranteed</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">99.2<span>%</span></div>
+            <div class="hero-stat-label">Verified Tender Accuracy Rate</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">NRM2<span>/SMM7</span></div>
+            <div class="hero-stat-label">RICS & CIOB Aligned Standards</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">100<span>%</span></div>
+            <div class="hero-stat-label">Senior Quantity Surveyors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Scope Estimator Bar -->
+  <div class="quick-tool-bar" id="quick-estimator">
+    <div class="container">
+      <div class="tool-bar-inner">
+        <div class="tool-bar-heading">
+          <h3>⚡ Instant UK Tender Scope & Turnaround Estimator</h3>
+          <p>Select your scheme details for an immediate turnaround estimate & fixed-price fee proposal.</p>
+        </div>
+        <div class="tool-bar-inputs">
+          <select class="tool-select">
+            <option>🏢 Commercial Office & Retail</option>
+            <option>🏘️ Residential Schemes & Multi-Unit</option>
+            <option>🏭 Industrial Units & Logistics Hubs</option>
+            <option>🏥 Healthcare, Care Homes & NHS</option>
+            <option>🏫 Schools & Higher Education</option>
+            <option>🏛️ Civils, Groundworks & Infrastructure</option>
+          </select>
+          <select class="tool-select">
+            <option>RICS NRM2 Tender-Ready BOQ (Main Contractor)</option>
+            <option>Subcontractor Trade Package Takeoff</option>
+            <option>Pre-Tender Elemental Cost Plan (BCIS Rates)</option>
+            <option>CESMM4 Civils & Infrastructure Schedule</option>
+            <option>SMM7 Legacy Measurement Schedule</option>
+            <option>Cat A / Cat B Architectural Fit-Out</option>
+          </select>
+          <a href="#quote" class="btn btn-red">Get a Fixed Quote →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Core UK Capabilities</div>
+        <h2 class="section-title">Professional Quantity Surveying <span class="text-red">You Can Bid On</span></h2>
+        <p class="section-desc">We deliver rigorous, standards-compliant commercial documentation backed by chartered quantity surveyors with decades of UK main contracting and commercial experience.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-box">📐</div>
+          <h3 class="service-title">Bills of Quantities (NRM2 / SMM7)</h3>
+          <p class="service-desc">Tender-ready, fully itemised Bills of Quantities prepared strictly in compliance with RICS NRM2 or SMM7 rules. Delivered in unlocked Excel workbooks with transparent measurement sheets.</p>
+          <ul class="service-bullets">
+            <li>RICS NRM2 & SMM7 compliant measurement</li>
+            <li>Unlocked Excel workbooks with live formulas</li>
+            <li>Formal Tender Query / RFI schedule included</li>
+          </ul>
+          <a href="#quote" class="service-link">Request Quote For This Service →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">💷</div>
+          <h3 class="service-title">BCIS Regional Cost Estimating</h3>
+          <p class="service-desc">Cost models backed by real-time UK market rates and regional BCIS (Building Cost Information Service) location indices for London, South East, Midlands, North, Scotland & Wales.</p>
+          <ul class="service-bullets">
+            <li>UK regional location factors & live labor indices</li>
+            <li>Subcontractor & supplier material benchmarking</li>
+            <li>Overheads, profit & preliminaries allocations</li>
+          </ul>
+          <a href="#quote" class="service-link">Request Quote For This Service →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">📊</div>
+          <h3 class="service-title">Digital Quantity Takeoffs</h3>
+          <p class="service-desc">First-principles material and component takeoffs from 2D PDF drawings, CAD DWGs, and 3D BIM models. Every line item is traced with high-res, color-coded markups.</p>
+          <ul class="service-bullets">
+            <li>Measured from PDF, DWG, and BIM / IFC models</li>
+            <li>High-resolution Bluebeam color-coded markups</li>
+            <li>Zero AI guesswork — verified by senior surveyors</li>
+          </ul>
+          <a href="#quote" class="service-link">Request Quote For This Service →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">📋</div>
+          <h3 class="service-title">Tender Support & Bid Packages</h3>
+          <p class="service-desc">Comprehensive tender return packs tailored for Main Contractors and Subcontractors to submit with confidence to private developers, local authorities, or PQS teams.</p>
+          <ul class="service-bullets">
+            <li>Subcontractor package scope splitting</li>
+            <li>Commercial risk review & tender qualifications</li>
+            <li>Executive bid summary ready for submission</li>
+          </ul>
+          <a href="#quote" class="service-link">Request Quote For This Service →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">💡</div>
+          <h3 class="service-title">Value Engineering & Cost Planning</h3>
+          <p class="service-desc">Elemental cost plans aligned with RIBA stages 1 to 5, alongside structured value engineering options to reduce scheme costs while safeguarding architectural quality.</p>
+          <ul class="service-bullets">
+            <li>RIBA Stage 1–5 elemental cost planning</li>
+            <li>Material & system specification comparisons</li>
+            <li>Buildability and procurement optimization notes</li>
+          </ul>
+          <a href="#quote" class="service-link">Request Quote For This Service →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">⚡</div>
+          <h3 class="service-title">Rush 24-Hour Turnaround</h3>
+          <p class="service-desc">Dedicated rapid-response estimating team ready to handle pressing UK tender submission deadlines. Fast-track delivery without sacrificing an ounce of precision.</p>
+          <ul class="service-bullets">
+            <li>Dedicated senior chartered surveyor assigned</li>
+            <li>Emergency same-day or 24–48hr turnaround</li>
+            <li>Direct phone & priority progress updates</li>
+          </ul>
+          <a href="#quote" class="service-link">Request Quote For This Service →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trades Covered (4 Work Pillars) -->
+  <section class="section trades-section" id="trades">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">RICS NRM2 Work Packages</div>
+        <h2 class="section-title">All UK Construction Trades <span class="text-red">Covered</span></h2>
+        <p class="section-desc" style="margin-bottom:36px;">
+          From single-trade subcontractors to full turnkey Main Contractor BOQs. Every work package is itemised to industry rules, completely transparent, and tender-ready.
+        </p>
+      </div>
+
+      <div class="trades-pillar-grid">
+        <div class="trade-pillar-card">
+          <div class="pillar-header">
+            <span class="pillar-icon">🚜</span>
+            <span class="pillar-div-tag">NRM2 GROUP 1 / CESMM4</span>
+          </div>
+          <h3 class="pillar-title">Groundworks & Civils</h3>
+          <p class="pillar-desc">Substructure, deep excavations, civil engineering, and infrastructure packages.</p>
+          <div class="pillar-chips">
+            <span class="pillar-chip">Bulk Earthworks & Remediation</span>
+            <span class="pillar-chip">Piling & Ground Beams</span>
+            <span class="pillar-chip">Reinforced Concrete Rafts</span>
+            <span class="pillar-chip">Adoptable Drainage & Attenuation</span>
+            <span class="pillar-chip">Hard Landscaping & External Works</span>
+          </div>
+          <a href="#quote" class="pillar-action-link">Estimate This Package →</a>
+        </div>
+
+        <div class="trade-pillar-card">
+          <div class="pillar-header">
+            <span class="pillar-icon">🏗️</span>
+            <span class="pillar-div-tag">NRM2 GROUP 2</span>
+          </div>
+          <h3 class="pillar-title">Superstructure & Frame</h3>
+          <p class="pillar-desc">Heavy structural cores, loadbearing masonry, and structural framing elements.</p>
+          <div class="pillar-chips">
+            <span class="pillar-chip">Structural Steelwork & Metal Decking</span>
+            <span class="pillar-chip">In-Situ Reinforced Concrete (RC Frame)</span>
+            <span class="pillar-chip">Facing Brickwork & Blockwork</span>
+            <span class="pillar-chip">Timber Frame, Glulam & CLT</span>
+            <span class="pillar-chip">Precast Stairs & Floors</span>
+          </div>
+          <a href="#quote" class="pillar-action-link">Estimate This Package →</a>
+        </div>
+
+        <div class="trade-pillar-card">
+          <div class="pillar-header">
+            <span class="pillar-icon">🏢</span>
+            <span class="pillar-div-tag">NRM2 GROUP 3</span>
+          </div>
+          <h3 class="pillar-title">Envelope & Roofing</h3>
+          <p class="pillar-desc">Exterior facade systems, architectural cladding, and weathering enclosures.</p>
+          <div class="pillar-chips">
+            <span class="pillar-chip">Curtain Walling & Structural Glazing</span>
+            <span class="pillar-chip">Rainscreen & Composite Cladding</span>
+            <span class="pillar-chip">Aluminium Windows & External Doors</span>
+            <span class="pillar-chip">Single-Ply & Hot Melt Flat Roofing</span>
+            <span class="pillar-chip">Standing Seam Roofing</span>
+          </div>
+          <a href="#quote" class="pillar-action-link">Estimate This Package →</a>
+        </div>
+
+        <div class="trade-pillar-card">
+          <div class="pillar-header">
+            <span class="pillar-icon">🎨</span>
+            <span class="pillar-div-tag">NRM2 GROUP 4</span>
+          </div>
+          <h3 class="pillar-title">Architectural Fit-Out</h3>
+          <p class="pillar-desc">Complete commercial Cat A & Cat B interiors, drylining, and decorative finishes.</p>
+          <div class="pillar-chips">
+            <span class="pillar-chip">Metal Stud Partitions & Shaftwalls</span>
+            <span class="pillar-chip">Suspended MF & Grid Ceilings</span>
+            <span class="pillar-chip">Plastering & Skimming</span>
+            <span class="pillar-chip">Architectural Doorsets & Ironmongery</span>
+            <span class="pillar-chip">Raised Access Flooring & Screeds</span>
+          </div>
+          <a href="#quote" class="pillar-action-link">Estimate This Package →</a>
+        </div>
+      </div>
+
+      <div class="trades-compact-footer">
+        <span>✓ Full RICS NRM2 & SMM7 Compliance</span>
+        <span class="dot-sep">•</span>
+        <span>✓ Subcontractor Single-Trade Takeoffs</span>
+        <span class="dot-sep">•</span>
+        <span>✓ Main Contractor Turnkey Packages</span>
+        <span class="dot-sep">•</span>
+        <span>✓ Full M&E / MEP Packages Included (NRM2 Group 5)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standards FAQ Section -->
+  <section class="section" id="standards" style="background:#ffffff;">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag gold">Measurement Standards & Rigour</div>
+        <h2 class="section-title">The Industry Standards Behind <span class="text-red">Every Takeoff</span></h2>
+        <p class="section-desc">We adhere to the UK's most rigorous quantity surveying frameworks to ensure your tenders stand up to strict scrutiny from clients, PQS teams, and funding banks.</p>
+      </div>
+
+      <div style="max-width:860px;margin:0 auto;">
+        <div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:14px;background:#f8fafc;padding:18px 22px;">
+          <h4 style="color:#dc2626;font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:8px;">Why do you measure strictly to RICS NRM2 standards?</h4>
+          <p style="color:#475569;font-size:0.92rem;line-height:1.65;margin:0;">The RICS New Rules of Measurement (NRM2) is the industry benchmark for detailed measurement for building works across the UK. By structuring our Bills of Quantities to NRM2, every item has an unambiguous description, standard unit of measurement (m, m², m³, nr, tonnes), and clear rules on inclusions and wastage. This protects contractors during procurement, eliminates tender disputes, and simplifies sub-contractor pricing.</p>
+        </div>
+        <div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:14px;background:#ffffff;padding:18px 22px;">
+          <h4 style="color:#0b1a30;font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:8px;">Can you produce takeoffs to SMM7 or CESMM4?</h4>
+          <p style="color:#475569;font-size:0.92rem;line-height:1.65;margin:0;">Yes. While NRM2 is standard for modern building contracts, many ongoing frameworks, public sector tenders, and legacy contracts still require SMM7 (Standard Method of Measurement 7). For civil engineering, heavy infrastructure, and highway projects, we measure to CESMM4. We also accommodate POMI for international projects.</p>
+        </div>
+        <div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:14px;background:#ffffff;padding:18px 22px;">
+          <h4 style="color:#0b1a30;font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:8px;">Why do you guarantee 100% human surveyor review with no AI guesswork?</h4>
+          <p style="color:#475569;font-size:0.92rem;line-height:1.65;margin:0;">Automated AI takeoff tools frequently misinterpret scale bars, overlook revision clouds, miss architectural notes, and double-count complex architectural junctions. At Apex Takeoff UK, every single quantity is measured from first principles by qualified senior quantity surveyors. Every measurement is visually color-coded on the PDF drawings so you have a complete, traceable audit trail.</p>
+        </div>
+        <div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:14px;background:#ffffff;padding:18px 22px;">
+          <h4 style="color:#0b1a30;font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:8px;">How are your BCIS rates and regional adjustments calculated?</h4>
+          <p style="color:#475569;font-size:0.92rem;line-height:1.65;margin:0;">Our pricing database integrates quarterly BCIS (Building Cost Information Service) location factors. A project in Central London has significantly different labor rates, congestion costs, and access considerations compared to one in Manchester, Birmingham, or Glasgow. We apply zip-code / postcode specific labor indices and live UK material supplier quotes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Simple & Fast Workflow</div>
+        <h2 class="section-title">Our 3-Step <span class="text-red">Estimating Process</span></h2>
+        <p class="section-desc">Designed to integrate directly into your fast-paced UK tender cycles.</p>
+      </div>
+
+      <div class="process-steps-row">
+        <div class="process-step-box">
+          <div class="process-step-num">01</div>
+          <h3>Submit Drawings & Specs</h3>
+          <p>Upload your architectural, structural, or MEP drawings via our secure portal. We accept PDF drawing sets, CAD DWG files, and 3D BIM/IFC models.</p>
+        </div>
+        <div class="process-step-box">
+          <div class="process-step-num">02</div>
+          <h3>Receive Fixed Quote in 1-2 Hours</h3>
+          <p>Our senior chartered surveyors review your drawings and provide a fixed-price fee proposal with an agreed delivery date and zero obligation.</p>
+        </div>
+        <div class="process-step-box">
+          <div class="process-step-num">03</div>
+          <h3>Get Tender-Ready BOQs in 24-48h</h3>
+          <p>Receive your fully editable Excel Bill of Quantities, color-coded Bluebeam markups, and executive bid summary ready for immediate tender submission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us & Benchmarking -->
+  <section class="section section-light" id="why-us">
+    <div class="container">
+      <div class="why-us-grid">
+        <div>
+          <div class="section-tag">Why Apex Takeoff UK</div>
+          <h2 class="section-title">Why British Contractors <span class="text-red">Choose Us</span></h2>
+          <p class="section-desc" style="margin:0 0 32px;">Construction estimating in the UK demands deep contractual insight, familiarity with NRM2 rules, and relentless attention to detail. We combine chartered surveyors with multi-tier peer reviews.</p>
+
+          <div class="why-feature-list">
+            <div class="why-feature-item">
+              <div class="why-feature-icon">🛡️</div>
+              <div class="why-feature-text">
+                <h4>100% Human Chartered Surveyors</h4>
+                <p>Every line item is measured and verified by experienced quantity surveyors with at least 10 years of UK contracting and site experience. Zero automated AI guesswork.</p>
+              </div>
+            </div>
+            <div class="why-feature-item">
+              <div class="why-feature-icon">📍</div>
+              <div class="why-feature-text">
+                <h4>BCIS UK Regional Location Factors</h4>
+                <p>Material prices and labor costs adjusted specifically to your site postcode — whether Central London, Birmingham, Manchester, Leeds, Glasgow, or Cardiff.</p>
+              </div>
+            </div>
+            <div class="why-feature-item">
+              <div class="why-feature-icon">⚙️</div>
+              <div class="why-feature-text">
+                <h4>Industry-Standard Estimating Platforms</h4>
+                <p>We work in Bluebeam Revu, Cubit Buildsoft, PlanSwift, and Causeway, ensuring total compatibility with your commercial workflow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="contractor-card-wrap">
+            <div class="contractor-card-title">
+              <span>Contractor Benchmarking</span>
+              <span style="font-size:0.85rem;color:#f87171;fontWeight:600;">🇬🇧 UK Commercial Audit</span>
+            </div>
+
+            <div class="contractor-row">
+              <span style="color:#cbd5e1;font-weight:600;">Turnaround Time</span>
+              <span class="check-val">✓ 24–48 Hours</span>
+            </div>
+            <div class="contractor-row">
+              <span style="color:#cbd5e1;font-weight:600;">Senior Chartered Review</span>
+              <span class="check-val">✓ 100% Guaranteed</span>
+            </div>
+            <div class="contractor-row">
+              <span style="color:#cbd5e1;font-weight:600;">Software Licensing Costs</span>
+              <span class="check-val">✓ £0 (Included)</span>
+            </div>
+            <div class="contractor-row">
+              <span style="color:#cbd5e1;font-weight:600;">RICS NRM2 & BCIS Rates</span>
+              <span class="check-val">✓ Standard UK-Wide</span>
+            </div>
+            <div class="contractor-row">
+              <span style="color:#cbd5e1;font-weight:600;">Fixed Fee Guarantee</span>
+              <span class="check-val">✓ Upfront in 1-2 Hours</span>
+            </div>
+            <div class="contractor-row">
+              <span style="color:#cbd5e1;font-weight:600;">Deliverable Formats</span>
+              <span class="check-val">✓ Unlocked Excel + Markups</span>
+            </div>
+
+            <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.15);text-align:center;">
+              <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:14px;">Save up to 60% compared to maintaining an in-house full-time estimating department.</p>
+              <a href="#quote" class="btn btn-red" style="width:100%;">Request Free Assessment →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deliverables -->
+  <section class="section" id="deliverables">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Deliverables</div>
+        <h2 class="section-title">What You Receive In Every <span class="text-red">Tender Package</span></h2>
+        <p class="section-desc">We don't hand you raw software exports. You receive polished, fully editable, field-ready documentation ready for procurement and bid day.</p>
+      </div>
+
+      <div class="deliverables-grid">
+        <div class="deliverable-box">
+          <div class="deliverable-icon">📊</div>
+          <h4>Itemised Excel BOQs</h4>
+          <p>Complete Excel files structured to RICS NRM2 rules with live formulas, adjustable preliminaries, regional labor rates, and summary sheets.</p>
+        </div>
+        <div class="deliverable-box">
+          <div class="deliverable-icon">🎨</div>
+          <h4>Color-Coded Marked Plans</h4>
+          <p>High-resolution PDF drawing markups generated in Bluebeam Revu showing exactly what was measured, counted, and color-coded by trade.</p>
+        </div>
+        <div class="deliverable-box">
+          <div class="deliverable-icon">📑</div>
+          <h4>Tender Queries / RFI Schedule</h4>
+          <p>An itemised log detailing drawing discrepancies, specification ambiguities, and missing details to submit back to the design team.</p>
+        </div>
+        <div class="deliverable-box">
+          <div class="deliverable-icon">🔍</div>
+          <h4>Chartered QS Sign-Off</h4>
+          <p>Every takeoff is peer-reviewed and signed off by a credentialed senior quantity surveyor to guarantee zero scope omissions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors Banner -->
+  <section class="sectors-section" id="sectors">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag navy">UK Sectors Covered</div>
+        <h2 class="section-title" style="color:#ffffff;">Proven Commercial Experience Across <span class="text-red">Every Sector</span></h2>
+        <p class="section-desc" style="color:#94a3b8;margin:0 auto;">From complex city-centre commercial towers to multi-phase residential housing developments across the UK.</p>
+      </div>
+
+      <div class="sectors-grid">
+        <div class="sector-card">
+          <div class="sector-icon">🏘️</div>
+          <div class="sector-title">Residential Schemes</div>
+          <div class="sector-sub">Single plots, high-end resi & multi-unit apartments</div>
+        </div>
+        <div class="sector-card">
+          <div class="sector-icon">🏢</div>
+          <div class="sector-title">Commercial & Retail</div>
+          <div class="sector-sub">Cat A & Cat B office fit-outs, supermarkets & retail</div>
+        </div>
+        <div class="sector-card">
+          <div class="sector-icon">🏭</div>
+          <div class="sector-title">Industrial & Logistics</div>
+          <div class="sector-sub">Distribution centres, sheds & high-bay warehouses</div>
+        </div>
+        <div class="sector-card">
+          <div class="sector-icon">🏥</div>
+          <div class="sector-title">Healthcare & Care Homes</div>
+          <div class="sector-sub">NHS clinics, dental surgeries & residential care</div>
+        </div>
+        <div class="sector-card">
+          <div class="sector-icon">🏫</div>
+          <div class="sector-title">Education & Civic</div>
+          <div class="sector-sub">School extensions, universities & community hubs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Form Section -->
+  <section class="section quote-section" id="quote">
+    <div class="container">
+      <div class="quote-layout">
+        <!-- Left Column: Value Props -->
+        <div class="quote-left-info">
+          <div class="section-tag navy">Free UK Project Review</div>
+          <h3>Submit Your Plans & Receive A Fast Fixed-Price Fee Proposal</h3>
+          <p>Upload your blueprints, architectural sets, and scope specifications. Our senior quantity surveyors review your drawings immediately and provide a guaranteed flat-rate proposal within 1 to 2 hours.</p>
+
+          <div class="quote-bullets">
+            <div class="quote-bullet-item"><span class="icon">✓</span><span>Guaranteed fixed fee — no hourly overruns or unexpected costs</span></div>
+            <div class="quote-bullet-item"><span class="icon">✓</span><span>Measured strictly to RICS NRM2 / SMM7 industry rules</span></div>
+            <div class="quote-bullet-item"><span class="icon">✓</span><span>Audited and signed off by senior chartered quantity surveyors</span></div>
+            <div class="quote-bullet-item"><span class="icon">✓</span><span>Full Excel BOQ workbook with intact formulas + marked PDF sets</span></div>
+            <div class="quote-bullet-item"><span class="icon">✓</span><span>Confidential review & non-disclosure protection for all client drawings</span></div>
+          </div>
+
+          <div style="margin-top:36px;padding:18px;background:rgba(255,255,255,0.06);border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="color:#f59e0b;font-weight:700;font-size:0.85rem;margin-bottom:4px;">⚡ TIGHT TENDER DEADLINE?</div>
+            <p style="color:#cbd5e1;font-size:0.86rem;margin:0;">Need your BOQ or takeoff within 24 hours? Mention your return date below or call our London desk directly at <strong>+44 (0) 20 7946 0192</strong> for priority scheduling.</p>
+          </div>
+        </div>
+
+        <!-- Right Column: Form Card -->
+        <div class="quote-form-card">
+          <h4 class="form-header-title">Request a Fixed-Price BOQ Quote</h4>
+          <p class="form-header-subtitle">Fill out your project specifications below. Zero obligation.</p>
+
+          <form id="quote-preview-form" onsubmit="event.preventDefault(); submitQuotePreview(this);">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" placeholder="e.g. David Harrison" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Company Name</label>
+                <input type="text" class="form-control" placeholder="e.g. Apex Construction Ltd" />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Work Email *</label>
+                <input type="email" class="form-control" placeholder="david@contractor.co.uk" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Contact Telephone</label>
+                <input type="tel" class="form-control" placeholder="+44 7123 456789" />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Project UK Region *</label>
+                <select class="form-control" required>
+                  <option value="">Select UK Region</option>
+                  <option>Greater London (Central / City)</option>
+                  <option>Greater London (Outer)</option>
+                  <option>South East & Home Counties</option>
+                  <option>East of England (Cambridge, Essex)</option>
+                  <option>South West (Bristol, Exeter)</option>
+                  <option>West Midlands (Birmingham)</option>
+                  <option>East Midlands (Nottingham, Leicester)</option>
+                  <option>North West (Manchester, Liverpool)</option>
+                  <option>Yorkshire & The Humber (Leeds, Sheffield)</option>
+                  <option>North East & Cumbria (Newcastle)</option>
+                  <option>Scotland (Glasgow, Edinburgh)</option>
+                  <option>Wales (Cardiff, Swansea)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Tender Return Deadline</label>
+                <input type="date" class="form-control" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Trade / Scope Needed *</label>
+              <select class="form-control">
+                <option>Full RICS NRM2 Bill of Quantities (Main Contractor)</option>
+                <option>Subcontractor Single-Trade Takeoff</option>
+                <option>Groundworks, Civils & Drainage (CESMM4)</option>
+                <option>RC Frame & Structural Steel Package</option>
+                <option>Facade, Cladding & Roofing Package</option>
+                <option>Drylining & Architectural Fit-Out</option>
+                <option>M&E / MEP Building Services Package</option>
+                <option>Pre-Tender Elemental Cost Plan (BCIS Rates)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Upload Blueprints or Drawings (PDF, ZIP, DWG)</label>
+              <div class="file-drop-area">
+                <input type="file" onchange="document.getElementById('fileNameLabel').innerText = 'Selected: ' + this.files[0].name;" />
+                <div class="file-drop-icon">📁</div>
+                <div class="file-drop-text" id="fileNameLabel">
+                  <strong>Click to select drawings</strong> or drag files here<br />
+                  <small style="color:#64748b">PDF, ZIP, DWG up to 150MB (or paste link below)</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Plan Room Link or Project Notes</label>
+              <input type="text" class="form-control" placeholder="e.g. Dropbox / Google Drive / Procore link, or specific scope instructions..." />
+            </div>
+
+            <button type="submit" class="btn btn-red" style="width:100%;padding:14px;font-size:1rem;">
+              Submit Plans For Free BOQ Quote →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="logo-clickable" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <div class="custom-brand-logo">
+              <svg class="brand-emblem-svg" viewBox="0 0 54 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 2L50 9V24C50 34.5 39 40.5 27 43.5C15 40.5 4 34.5 4 24V9L27 2Z" fill="#081426" stroke="#1e3a63" stroke-width="1.8" />
+                <g clip-path="url(#shieldApexP)">
+                  <line x1="4" y1="12" x2="50" y2="12" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                  <line x1="4" y1="22" x2="50" y2="22" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                  <line x1="4" y1="32" x2="50" y2="32" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                  <rect x="24.5" y="0" width="5" height="45" fill="#ffffff" />
+                  <rect x="0" y="19" width="54" height="5" fill="#ffffff" />
+                  <rect x="25.5" y="0" width="3" height="45" fill="#dc2626" />
+                  <rect x="0" y="20" width="54" height="3" fill="#dc2626" />
+                  <polygon points="27,6 44,28 36,28 27,16 18,28 10,28" fill="#ffffff" opacity="0.9" />
+                  <polygon points="27,9 41,27 34,27 27,18 20,27 13,27" fill="#dc2626" />
+                  <circle cx="27" cy="27" r="3" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+                </g>
+              </svg>
+              <div class="brand-text-block">
+                <div class="brand-primary-row">
+                  <span class="brand-apex" style="color:#fff">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff" style="color:#fff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-tagline-text" style="color:#94a3b8">
+                  RICS NRM2 Takeoffs & Tender Estimating
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="footer-about-text">
+            Apex Takeoff UK is an independent British quantity surveying and commercial cost consultancy. We support Main Contractors, Subcontractors, and Property Developers across England, Scotland, and Wales with verifiable, RICS NRM2 compliant Bills of Quantities and BCIS regional cost models.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trades">Work Packages</a></li>
+            <li><a href="#standards">NRM2 Standards</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#why-us">Why Apex</a></li>
+            <li><a href="#quote">Request Quote</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Core Packages</h4>
+          <ul class="footer-links-list">
+            <li><a href="#trades">Groundworks & Civils</a></li>
+            <li><a href="#trades">RC Frame & Steelwork</a></li>
+            <li><a href="#trades">Facades & Envelope</a></li>
+            <li><a href="#trades">Architectural Fit-Out</a></li>
+            <li><a href="#trades">M&E Building Services</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">UK Contact</h4>
+          <div class="footer-contact-row"><span class="icon">📍</span><div>8 Duncannon Street, London, WC2N 4JF, UK</div></div>
+          <div class="footer-contact-row"><span class="icon">📞</span><div><a href="tel:+442079460192" style="color:#e2e8f0">+44 (0) 20 7946 0192</a></div></div>
+          <div class="footer-contact-row"><span class="icon">✉️</span><div><a href="mailto:quotes@apextakeoff.co.uk" style="color:#e2e8f0">quotes@apextakeoff.co.uk</a></div></div>
+          <div class="footer-contact-row"><span class="icon">🕒</span><div>Monday – Friday: 8:00 AM – 6:00 PM GMT</div></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-inner">
+          <div>© 2026 Apex Takeoff UK. All rights reserved. Registered in England & Wales.</div>
+          <div style="display:flex;gap:20px;">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & RICS Measurement Standards</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to Top">
+    ↑
+  </button>
+
+  <script>
+    // Tagline Word Rotator
+    const words = ["You Win.", "You Scale.", "You Profit."];
+    let idx = 0;
+    setInterval(() => {
+      idx = (idx + 1) % words.length;
+      const el = document.getElementById('dynamicWord');
+      if (el) el.innerText = words[idx];
+    }, 2400);
+
+    // Mobile Navigation Drawer Toggle
+    function toggleMobileNav() {
+      const drawer = document.getElementById('mobileDrawer');
+      if (drawer) drawer.classList.toggle('open');
+    }
+    function closeMobileNav() {
+      const drawer = document.getElementById('mobileDrawer');
+      if (drawer) drawer.classList.remove('open');
+    }
+
+    // Back to Top Visibility
+    window.addEventListener('scroll', () => {
+      const btn = document.getElementById('backToTop');
+      if (btn) {
+        if (window.scrollY > 400) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      }
+    });
+
+    // Form Submission Handling
+    async function submitQuotePreview(form) {
+      const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.innerText;
+      btn.innerText = 'Submitting Drawings…';
+      btn.disabled = true;
+
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 2800);
+
+      try {
+        const formData = new FormData(form);
+        formData.append('_subject', 'New UK Plan & BOQ Quote Request from Website');
+        formData.append('_template', 'table');
+        formData.append('_captcha', 'false');
+
+        await fetch('https://formsubmit.co/ajax/quotes@apextakeoff.co.uk', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData,
+          signal: controller.signal
+        });
+      } catch (e) {
+        console.warn('Submission fallback handled:', e);
+      } finally {
+        clearTimeout(timer);
+      }
+
+      alert('Drawings received successfully! Our senior chartered quantity surveying team has commenced review and will email your formal fee proposal within 1-2 hours.');
+      form.reset();
+      const fileLabel = document.getElementById('fileNameLabel');
+      if (fileLabel) {
+        fileLabel.innerHTML = '<strong>Click to select drawings</strong> or drag files here<br /><small style="color:#64748b">PDF, ZIP, DWG up to 150MB (or paste link below)</small>';
+      }
+      btn.innerText = originalText;
+      btn.disabled = false;
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111e"/>
+      <stop offset="100%" stop-color="#0f233e"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Shield -->
+  <path d="M32 3 L58 12 V32 C58 46.5 45 56 32 61 C19 56 6 46.5 6 32 V12 L32 3 Z" fill="url(#shieldGrad)" stroke="#1e3a63" stroke-width="2.5" />
+  <!-- Apex Peak / Chevron Triangle -->
+  <path d="M32 10 L50 26 H42 L32 17 L22 26 H14 L32 10 Z" fill="url(#redGrad)" />
+  <!-- British Cross Element -->
+  <rect x="29.5" y="22" width="5" height="28" fill="#ffffff" />
+  <rect x="17" y="33" width="30" height="5" fill="#ffffff" />
+  <rect x="30.7" y="22" width="2.6" height="28" fill="url(#redGrad)" />
+  <rect x="17" y="34.2" width="30" height="2.6" fill="url(#redGrad)" />
+  <!-- Gold Surveyor / Ruler Markings -->
+  <circle cx="32" cy="35.5" r="3" fill="url(#goldGrad)" />
+  <!-- UK Text Badge at bottom -->
+  <text x="32" y="55" font-family="'Montserrat', sans-serif" font-weight="900" font-size="9" fill="#f59e0b" text-anchor="middle" letter-spacing="1.5">UK</text>
+</svg>
+

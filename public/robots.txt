@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apextakeoff.co.uk/sitemap.xml
+
