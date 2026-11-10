@@ -14,7 +14,7 @@ export default function Services() {
     },
     {
       icon: '💷',
-      title: 'BCIS Regional Cost Estimating',
+      title: 'BCIS Regional Cost Planning & Pricing',
       desc: 'Cost models backed by real-time UK market rates and regional BCIS (Building Cost Information Service) location indices for London, South East, Midlands, the North, Scotland & Wales.',
       bullets: [
         'UK regional location factors & live labor indices',
@@ -55,11 +55,11 @@ export default function Services() {
     {
       icon: '⚡',
       title: 'Rush 24-Hour Turnaround',
-      desc: 'Dedicated rapid-response estimating team ready to handle pressing UK tender submission deadlines. Fast-track delivery without sacrificing an ounce of precision.',
+      desc: 'Dedicated rapid-response quantity surveying team ready to handle pressing UK tender submission deadlines. Fast-track delivery without sacrificing an ounce of precision.',
       bullets: [
         'Dedicated senior chartered surveyor assigned',
         'Emergency same-day or 24–48hr turnaround',
-        'Direct phone & WhatsApp progress updates',
+        'Direct priority WhatsApp & email progress updates',
       ],
     },
   ]

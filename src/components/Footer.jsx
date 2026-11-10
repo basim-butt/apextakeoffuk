@@ -102,14 +102,6 @@ export default function Footer() {
               <div>8 Duncannon Street, London, WC2N 4JF, UK</div>
             </div>
             <div className="footer-contact-row">
-              <span className="icon">📞</span>
-              <div>
-                <a href="tel:+442079460192" style={{ color: '#e2e8f0' }}>
-                  +44 (0) 20 7946 0192
-                </a>
-              </div>
-            </div>
-            <div className="footer-contact-row">
               <span className="icon">✉️</span>
               <div>
                 <a href="mailto:quotes@apextakeoff.co.uk" style={{ color: '#e2e8f0' }}>

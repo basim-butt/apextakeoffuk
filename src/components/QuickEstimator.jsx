@@ -17,8 +17,8 @@ export default function QuickEstimator() {
       <div className="container">
         <div className="tool-bar-inner">
           <div className="tool-bar-heading">
-            <h3>⚡ Instant UK Tender Scope & Turnaround Estimator</h3>
-            <p>Select your scheme details for an immediate turnaround estimate & fixed-price fee proposal.</p>
+            <h3>⚡ Instant UK Tender Scope & Turnaround Calculator</h3>
+            <p>Select your scheme details for an immediate turnaround proposal & fixed-price quote.</p>
           </div>
 
           <div className="tool-bar-inputs">

@@ -123,7 +123,7 @@ export default function QuoteForm() {
                 ⚡ TIGHT TENDER DEADLINE?
               </div>
               <p style={{ color: '#cbd5e1', fontSize: '0.86rem', margin: 0 }}>
-                Need your BOQ or takeoff within 24 hours? Mention your return date below or call our London desk directly at <strong>+44 (0) 20 7946 0192</strong> for priority scheduling.
+                Need your BOQ or takeoff within 24 hours? Mention your return deadline below or email <strong>quotes@apextakeoff.co.uk</strong> for priority fast-track scheduling.
               </p>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function QuoteForm() {
               </div>
             ) : (
               <>
-                <h4 className="form-header-title">Request a Fixed-Price BOQ Quote</h4>
+                <h4 className="form-header-title">Request a Quote</h4>
                 <p className="form-header-subtitle">Fill out your project specifications below. Zero obligation.</p>
 
                 <form onSubmit={handleSubmit}>

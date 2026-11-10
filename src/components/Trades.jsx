@@ -102,7 +102,7 @@ export default function Trades() {
                 style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
                 onClick={scrollToQuote}
               >
-                Estimate This Package →
+                Request Quote for Package →
               </button>
             </div>
           ))}

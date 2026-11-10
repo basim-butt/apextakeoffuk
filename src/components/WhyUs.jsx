@@ -28,7 +28,7 @@ export default function WhyUs() {
               Why British Contractors <span className="text-red">Choose Us</span>
             </h2>
             <p className="section-desc" style={{ margin: '0 0 32px' }}>
-              Construction estimating in the UK demands deep contractual insight, familiarity with NRM2 rules, and relentless attention to detail. We combine chartered surveyors with multi-tier peer reviews.
+              Quantity surveying and commercial measurement in the UK demand deep contractual insight, familiarity with NRM2 rules, and relentless attention to detail. We combine chartered surveyors with multi-tier peer reviews.
             </p>
 
             <div className="why-feature-list">
@@ -55,7 +55,7 @@ export default function WhyUs() {
               <div className="why-feature-item">
                 <div className="why-feature-icon">⚙️</div>
                 <div className="why-feature-text">
-                  <h4>Industry-Standard Estimating Platforms</h4>
+                  <h4>Industry-Standard Quantity Surveying Software</h4>
                   <p>
                     We work in Bluebeam Revu, Cubit Buildsoft, PlanSwift, and Causeway, ensuring total compatibility with your commercial workflow.
                   </p>
@@ -80,7 +80,7 @@ export default function WhyUs() {
 
               <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.15)', textAlign: 'center' }}>
                 <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '14px' }}>
-                  Save up to 60% compared to maintaining an in-house full-time estimating department.
+                  Save up to 60% compared to maintaining an in-house full-time quantity surveying department.
                 </p>
                 <button className="btn btn-red" style={{ width: '100%' }} onClick={scrollToQuote}>
                   Request Free Assessment →

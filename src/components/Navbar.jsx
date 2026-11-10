@@ -68,7 +68,7 @@ export function BrandLogo() {
           <span className="brand-uk-badge">UK</span>
         </div>
         <div className="brand-tagline-text">
-          RICS NRM2 Takeoffs & Estimating
+          RICS NRM2 Takeoffs & Quantity Surveying
         </div>
       </div>
     </div>
@@ -117,13 +117,7 @@ export default function Navbar() {
             </div>
 
             <div className="topbar-right">
-              <a href="tel:+442079460192" className="topbar-link phone-link">
-                <span>📞</span>
-                <span className="topbar-phone-desktop">+44 (0) 20 7946 0192</span>
-                <span className="topbar-phone-mobile">020 7946 0192</span>
-              </a>
-              <span className="topbar-divider topbar-hide-xs">•</span>
-              <a href="mailto:quotes@apextakeoff.co.uk" className="topbar-link topbar-hide-xs">
+              <a href="mailto:quotes@apextakeoff.co.uk" className="topbar-link">
                 <span>✉️</span> quotes@apextakeoff.co.uk
               </a>
             </div>
@@ -169,7 +163,7 @@ export default function Navbar() {
                 className="btn btn-red btn-header-cta"
                 onClick={() => scrollTo('quote', 'Contact')}
               >
-                <span>Request BOQ Quote</span>
+                <span>Request a Quote</span>
                 <span className="cta-arrow">→</span>
               </button>
 
@@ -213,7 +207,7 @@ export default function Navbar() {
           style={{ width: '100%', marginTop: '14px' }}
           onClick={() => scrollTo('quote', 'Contact')}
         >
-          Request BOQ Quote →
+          Request a Quote →
         </button>
       </div>
     </header>

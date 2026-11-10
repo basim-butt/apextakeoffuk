@@ -25,7 +25,7 @@ export default function HowItWorks() {
         <div className="text-center">
           <div className="section-tag">Simple & Fast Workflow</div>
           <h2 className="section-title">
-            Our 3-Step <span className="text-red">Estimating Process</span>
+            Our 3-Step <span className="text-red">Quantity Surveying Process</span>
           </h2>
           <p className="section-desc">
             Designed to seamlessly integrate into your time-critical UK tender cycles.
