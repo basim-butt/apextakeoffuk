@@ -831,7 +831,7 @@
       btn.disabled = true;
 
       const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 2800);
+      const timer = setTimeout(() => controller.abort(), 60000);
 
       try {
         const formData = new FormData(form);

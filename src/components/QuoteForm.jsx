@@ -52,9 +52,10 @@ export default function QuoteForm() {
     data.append('_template', 'table')
     data.append('_captcha', 'false')
 
-    // Timeout after 2.8 seconds so the form never hangs
+    // Timeout: allow 60 seconds if a file is attached, or 10 seconds for text-only
     const controller = new AbortController()
-    const timer = setTimeout(() => controller.abort(), 2800)
+    const timeoutDuration = file ? 60000 : 10000
+    const timer = setTimeout(() => controller.abort(), timeoutDuration)
 
     try {
       await fetch('https://formsubmit.co/ajax/info@apextakeoff.uk', {
