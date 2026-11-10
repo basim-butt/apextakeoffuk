@@ -24,7 +24,6 @@ export default function QuoteForm() {
     phone: '',
     region: '',
     scope: 'Full RICS NRM2 Bill of Quantities (Main Contractor)',
-    deadline: '',
     notes: '',
   })
   const [file, setFile] = useState(null)
@@ -43,7 +42,6 @@ export default function QuoteForm() {
     data.append('Phone', formData.phone || 'Not Specified')
     data.append('Project UK Region', formData.region)
     data.append('Package Scope', formData.scope)
-    data.append('Tender Deadline', formData.deadline || 'Flexible')
     data.append('Notes or Plan Link', formData.notes || 'None')
     if (file) {
       data.append('attachment', file)
@@ -124,7 +122,7 @@ export default function QuoteForm() {
                 ⚡ TIGHT TENDER DEADLINE?
               </div>
               <p style={{ color: '#cbd5e1', fontSize: '0.86rem', margin: 0 }}>
-                Need your BOQ or takeoff within 24 hours? Mention your return deadline below or email <strong>info@apextakeoff.uk</strong> for priority fast-track scheduling.
+                Need your BOQ or takeoff within 24 hours? Mention your required timeline in notes or email <strong>info@apextakeoff.uk</strong> for priority fast-track scheduling.
               </p>
             </div>
           </div>
@@ -232,33 +230,23 @@ export default function QuoteForm() {
                     </div>
 
                     <div className="form-group">
-                      <label className="form-label">Tender Return Deadline</label>
-                      <input
-                        type="date"
+                      <label className="form-label">Trade / Scope Needed *</label>
+                      <select
                         className="form-control"
-                        value={formData.deadline}
-                        onChange={(e) => setFormData({ ...formData, deadline: e.target.value })}
-                      />
+                        value={formData.scope}
+                        onChange={(e) => setFormData({ ...formData, scope: e.target.value })}
+                      >
+                        <option>Full RICS NRM2 Bill of Quantities (Main Contractor)</option>
+                        <option>Subcontractor Single-Trade Takeoff</option>
+                        <option>Groundworks, Civils & Drainage (CESMM4)</option>
+                        <option>RC Frame & Structural Steel Package</option>
+                        <option>Facade, Cladding & Roofing Package</option>
+                        <option>Drylining & Architectural Fit-Out</option>
+                        <option>M&E / MEP Building Services Package</option>
+                        <option>Pre-Tender Elemental Cost Plan (BCIS Rates)</option>
+                        <option>Value Engineering & Review</option>
+                      </select>
                     </div>
-                  </div>
-
-                  <div className="form-group">
-                    <label className="form-label">Trade / Scope Needed *</label>
-                    <select
-                      className="form-control"
-                      value={formData.scope}
-                      onChange={(e) => setFormData({ ...formData, scope: e.target.value })}
-                    >
-                      <option>Full RICS NRM2 Bill of Quantities (Main Contractor)</option>
-                      <option>Subcontractor Single-Trade Takeoff</option>
-                      <option>Groundworks, Civils & Drainage (CESMM4)</option>
-                      <option>RC Frame & Structural Steel Package</option>
-                      <option>Facade, Cladding & Roofing Package</option>
-                      <option>Drylining & Architectural Fit-Out</option>
-                      <option>M&E / MEP Building Services Package</option>
-                      <option>Pre-Tender Elemental Cost Plan (BCIS Rates)</option>
-                      <option>Value Engineering & Review</option>
-                    </select>
                   </div>
 
                   <div className="form-group">
