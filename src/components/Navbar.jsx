@@ -98,7 +98,11 @@ export default function Navbar() {
               </span>
               <span className="topbar-divider topbar-hide-sm">•</span>
               <span className="topbar-item topbar-hide-sm">
-                100 Oxford St, London W1D
+                <span>📍</span> Headquarters: 100 Oxford St, London W1D
+              </span>
+              <span className="topbar-divider topbar-hide-md">•</span>
+              <span className="topbar-item topbar-hide-md">
+                <span>🕒</span> Mon – Fri: 8:00 AM – 6:00 PM GMT
               </span>
             </div>
 

@@ -1593,6 +1593,12 @@ button {
   }
 }
 
+@media (max-width: 1120px) {
+  .topbar-hide-md {
+    display: none !important;
+  }
+}
+
 @media (max-width: 860px) {
   .topbar-text-desktop {
     display: none;
