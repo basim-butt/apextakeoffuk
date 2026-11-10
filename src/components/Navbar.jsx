@@ -106,20 +106,24 @@ export default function Navbar() {
           <div className="topbar-inner">
             <div className="topbar-left">
               <span className="topbar-item highlight-item">
-                <span className="star-icon">★</span> Serving UK Contractors Nationwide
+                <span className="star-icon">★</span>
+                <span className="topbar-text-desktop">Serving UK Contractors Nationwide</span>
+                <span className="topbar-text-mobile">UK Nationwide</span>
               </span>
-              <span className="topbar-divider">•</span>
-              <span className="topbar-item">
+              <span className="topbar-divider topbar-hide-sm">•</span>
+              <span className="topbar-item topbar-hide-sm">
                 London WC2N
               </span>
             </div>
 
             <div className="topbar-right">
               <a href="tel:+442079460192" className="topbar-link phone-link">
-                <span>📞</span> +44 (0) 20 7946 0192
+                <span>📞</span>
+                <span className="topbar-phone-desktop">+44 (0) 20 7946 0192</span>
+                <span className="topbar-phone-mobile">020 7946 0192</span>
               </a>
-              <span className="topbar-divider">•</span>
-              <a href="mailto:quotes@apextakeoff.co.uk" className="topbar-link">
+              <span className="topbar-divider topbar-hide-xs">•</span>
+              <a href="mailto:quotes@apextakeoff.co.uk" className="topbar-link topbar-hide-xs">
                 <span>✉️</span> quotes@apextakeoff.co.uk
               </a>
             </div>
