@@ -9,19 +9,15 @@ export function BrandLogo() {
     <div className="custom-brand-logo">
       <svg
         className="brand-emblem-svg"
-        viewBox="0 0 54 45"
+        viewBox="0 0 54 48"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
         <defs>
           <clipPath id="shieldApexExact">
-            <path d="M27 2L50 9V24C50 34.5 39 40.5 27 43.5C15 40.5 4 34.5 4 24V9L27 2Z" />
+            <path d="M27 2L50 9V26C50 37 39 43.5 27 46.5C15 43.5 4 26 4 26V9L27 2Z" />
           </clipPath>
-          <linearGradient id="shieldBaseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#081426" />
-            <stop offset="100%" stopColor="#0f233e" />
-          </linearGradient>
           <linearGradient id="apexRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#dc2626" />
             <stop offset="100%" stopColor="#991b1b" />
@@ -30,39 +26,23 @@ export function BrandLogo() {
 
         {/* Shield Base Outline */}
         <path
-          d="M27 2L50 9V24C50 34.5 39 40.5 27 43.5C15 40.5 4 34.5 4 24V9L27 2Z"
-          fill="url(#shieldBaseGrad)"
+          d="M27 2L50 9V26C50 37 39 43.5 27 46.5C15 43.5 4 26 4 26V9L27 2Z"
+          fill="#012169"
           stroke="#1e3a63"
-          strokeWidth="1.8"
+          strokeWidth="2"
         />
 
-        {/* UK Union Jack Shield Inset & Apex Geometry */}
+        {/* Pure UK Flag Shield Fill */}
         <g clipPath="url(#shieldApexExact)">
-          {/* Royal Navy Blue Base */}
-          <rect x="0" y="0" width="54" height="45" fill="#012169" />
-
-          {/* White Saltire Diagonals (St Andrew) */}
-          <line x1="0" y1="0" x2="54" y2="45" stroke="#ffffff" strokeWidth="6.5" />
-          <line x1="54" y1="0" x2="0" y2="45" stroke="#ffffff" strokeWidth="6.5" />
-
-          {/* Red Saltire Diagonals (St Patrick) */}
-          <line x1="0" y1="0" x2="54" y2="45" stroke="#dc2626" strokeWidth="2.4" />
-          <line x1="54" y1="0" x2="0" y2="45" stroke="#dc2626" strokeWidth="2.4" />
-
-          {/* White St George Cross */}
-          <rect x="22.5" y="0" width="9" height="45" fill="#ffffff" />
-          <rect x="0" y="18" width="54" height="9" fill="#ffffff" />
-
-          {/* Red St George Cross */}
-          <rect x="24.5" y="0" width="5" height="45" fill="url(#apexRedGrad)" />
-          <rect x="0" y="20" width="54" height="5" fill="url(#apexRedGrad)" />
-
-          {/* Triangular Apex / Surveying Peak Prism */}
-          <polygon points="27,5 44,27 36,27 27,15 18,27 10,27" fill="#ffffff" opacity="0.95" />
-          <polygon points="27,8 41,25 34,25 27,17 20,25 13,25" fill="url(#apexRedGrad)" />
-
-          {/* Gold Surveying Target Center */}
-          <circle cx="27" cy="27" r="3.2" fill="#f59e0b" stroke="#ffffff" strokeWidth="1.2" />
+          <rect width="54" height="48" fill="#012169" />
+          <line x1="0" y1="0" x2="54" y2="48" stroke="#ffffff" strokeWidth="7" />
+          <line x1="54" y1="0" x2="0" y2="48" stroke="#ffffff" strokeWidth="7" />
+          <line x1="0" y1="0" x2="54" y2="48" stroke="#dc2626" strokeWidth="2.5" />
+          <line x1="54" y1="0" x2="0" y2="48" stroke="#dc2626" strokeWidth="2.5" />
+          <rect x="22.5" y="0" width="9" height="48" fill="#ffffff" />
+          <rect x="0" y="19" width="54" height="9" fill="#ffffff" />
+          <rect x="24.5" y="0" width="5" height="48" fill="url(#apexRedGrad)" />
+          <rect x="0" y="21" width="54" height="5" fill="url(#apexRedGrad)" />
         </g>
       </svg>
 

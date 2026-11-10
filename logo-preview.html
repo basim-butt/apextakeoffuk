@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Takeoff UK — Logo Flag Concepts for Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #0b1320;
+      color: #e2e8f0;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .container { max-width: 1060px; margin: 0 auto; }
+    .header-box { text-align: center; margin-bottom: 40px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      background: rgba(220, 38, 38, 0.2);
+      border: 1px solid rgba(220, 38, 38, 0.4);
+      color: #fca5a5;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    p.lead { color: #94a3b8; font-size: 0.95rem; }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 28px;
+    }
+    @media (max-width: 560px) {
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+
+    .concept-card {
+      background: #111e33;
+      border: 1px solid #1e3a63;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: all 0.2s ease;
+    }
+    .concept-card:hover {
+      border-color: #dc2626;
+      transform: translateY(-2px);
+    }
+    .concept-card.featured {
+      border: 2px solid #dc2626;
+    }
+    .card-header {
+      padding: 16px 20px;
+      background: #0d182b;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: #ffffff;
+    }
+    .rec-tag {
+      background: #dc2626;
+      color: #ffffff;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .card-body { padding: 22px; }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .preview-section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    /* Light Mockup (How it looks on the white navbar) */
+    .mockup-light {
+      background: #ffffff;
+      padding: 16px 22px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Dark Mockup (How it looks in the footer) */
+    .mockup-dark {
+      background: #07111e;
+      padding: 16px 22px;
+      border-radius: 8px;
+      border: 1px solid #1e293b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo typography */
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-row {
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 1.25rem;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+    .mockup-light .brand-apex, .mockup-light .brand-takeoff { color: #0b1a30; }
+    .mockup-dark .brand-apex, .mockup-dark .brand-takeoff { color: #ffffff; }
+    .brand-sep { color: #f59e0b; margin: 0 3px; }
+    .brand-uk-badge {
+      background: #dc2626;
+      color: #ffffff;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+      letter-spacing: 0.08em;
+    }
+    .brand-sub {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      margin-top: 3px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .mockup-light .brand-sub { color: #475569; }
+    .mockup-dark .brand-sub { color: #94a3b8; }
+
+    .selection-banner {
+      margin-top: 40px;
+      background: #0f233e;
+      border: 1px solid #2563eb;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .selection-banner h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .selection-banner p {
+      color: #93c5fd;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-box">
+      <div class="badge">Pure UK Flag Logo Review</div>
+      <h1>Choose Your Pure UK Flag Logo</h1>
+      <p class="lead">All compass prisms, triangles, and extra overlays have been removed. The emblem is <strong>100% pure UK Union Jack flag</strong>.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- CONCEPT 1 -->
+      <div class="concept-card featured">
+        <div class="card-header">
+          <div class="card-title">Concept 1: Modern Rounded Flag Badge</div>
+          <span class="rec-tag">Recommended — Direct Match</span>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">Exact match to your uploaded reference image. Features rounded corners (5px radius), subtle beveled border, and authentic Royal British Navy blue field.</p>
+
+          <div class="preview-section-title">Light Navbar Preview (Header)</div>
+          <div class="mockup-light">
+            <div class="logo-container">
+              <!-- SVG Flag Badge -->
+              <svg width="44" height="30" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 5px rgba(0,0,0,0.18));">
+                <clipPath id="c1">
+                  <rect width="60" height="40" rx="5" />
+                </clipPath>
+                <g clip-path="url(#c1)">
+                  <rect width="60" height="40" fill="#012169" />
+                  <line x1="0" y1="0" x2="60" y2="40" stroke="#ffffff" stroke-width="7" />
+                  <line x1="60" y1="0" x2="0" y2="40" stroke="#ffffff" stroke-width="7" />
+                  <line x1="0" y1="0" x2="60" y2="40" stroke="#dc2626" stroke-width="2.4" />
+                  <line x1="60" y1="0" x2="0" y2="40" stroke="#dc2626" stroke-width="2.4" />
+                  <rect x="25" y="0" width="10" height="40" fill="#ffffff" />
+                  <rect x="0" y="15" width="60" height="10" fill="#ffffff" />
+                  <rect x="27.5" y="0" width="5" height="40" fill="#dc2626" />
+                  <rect x="0" y="17.5" width="60" height="5" fill="#dc2626" />
+                  <rect width="60" height="18" fill="#ffffff" opacity="0.08" />
+                </g>
+                <rect width="60" height="40" rx="5" stroke="rgba(0,0,0,0.15)" stroke-width="1.2" fill="none" />
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Navbar Context</span>
+          </div>
+
+          <div class="preview-section-title">Dark Mode Preview (Footer)</div>
+          <div class="mockup-dark">
+            <div class="logo-container">
+              <svg width="44" height="30" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));">
+                <g clip-path="url(#c1)">
+                  <rect width="60" height="40" fill="#012169" />
+                  <line x1="0" y1="0" x2="60" y2="40" stroke="#ffffff" stroke-width="7" />
+                  <line x1="60" y1="0" x2="0" y2="40" stroke="#ffffff" stroke-width="7" />
+                  <line x1="0" y1="0" x2="60" y2="40" stroke="#dc2626" stroke-width="2.4" />
+                  <line x1="60" y1="0" x2="0" y2="40" stroke="#dc2626" stroke-width="2.4" />
+                  <rect x="25" y="0" width="10" height="40" fill="#ffffff" />
+                  <rect x="0" y="15" width="60" height="10" fill="#ffffff" />
+                  <rect x="27.5" y="0" width="5" height="40" fill="#dc2626" />
+                  <rect x="0" y="17.5" width="60" height="5" fill="#dc2626" />
+                  <rect width="60" height="18" fill="#ffffff" opacity="0.08" />
+                </g>
+                <rect width="60" height="40" rx="5" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" fill="none" />
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#94a3b8; font-weight:600;">Footer Context</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 2 -->
+      <div class="concept-card">
+        <div class="card-header">
+          <div class="card-title">Concept 2: British Shield Flag</div>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">The traditional British surveyor heraldic shield, filled purely with the UK Union Jack flag without any chevron or center circle.</p>
+
+          <div class="preview-section-title">Light Navbar Preview (Header)</div>
+          <div class="mockup-light">
+            <div class="logo-container">
+              <svg width="40" height="38" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 5px rgba(0,0,0,0.18));">
+                <clipPath id="c2">
+                  <path d="M27 2L50 9V26C50 37 39 43.5 27 46.5C15 43.5 4 26 4 26V9L27 2Z" />
+                </clipPath>
+                <path d="M27 2L50 9V26C50 37 39 43.5 27 46.5C15 43.5 4 26 4 26V9L27 2Z" fill="#012169" stroke="#1e3a63" stroke-width="2" />
+                <g clip-path="url(#c2)">
+                  <rect width="54" height="48" fill="#012169" />
+                  <line x1="0" y1="0" x2="54" y2="48" stroke="#ffffff" stroke-width="7" />
+                  <line x1="54" y1="0" x2="0" y2="48" stroke="#ffffff" stroke-width="7" />
+                  <line x1="0" y1="0" x2="54" y2="48" stroke="#dc2626" stroke-width="2.5" />
+                  <line x1="54" y1="0" x2="0" y2="48" stroke="#dc2626" stroke-width="2.5" />
+                  <rect x="22.5" y="0" width="9" height="48" fill="#ffffff" />
+                  <rect x="0" y="19" width="54" height="9" fill="#ffffff" />
+                  <rect x="24.5" y="0" width="5" height="48" fill="#dc2626" />
+                  <rect x="0" y="21" width="54" height="5" fill="#dc2626" />
+                </g>
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Navbar Context</span>
+          </div>
+
+          <div class="preview-section-title">Dark Mode Preview (Footer)</div>
+          <div class="mockup-dark">
+            <div class="logo-container">
+              <svg width="40" height="38" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));">
+                <path d="M27 2L50 9V26C50 37 39 43.5 27 46.5C15 43.5 4 26 4 26V9L27 2Z" fill="#012169" stroke="#1e3a63" stroke-width="2" />
+                <g clip-path="url(#c2)">
+                  <rect width="54" height="48" fill="#012169" />
+                  <line x1="0" y1="0" x2="54" y2="48" stroke="#ffffff" stroke-width="7" />
+                  <line x1="54" y1="0" x2="0" y2="48" stroke="#ffffff" stroke-width="7" />
+                  <line x1="0" y1="0" x2="54" y2="48" stroke="#dc2626" stroke-width="2.5" />
+                  <line x1="54" y1="0" x2="0" y2="48" stroke="#dc2626" stroke-width="2.5" />
+                  <rect x="22.5" y="0" width="9" height="48" fill="#ffffff" />
+                  <rect x="0" y="19" width="54" height="9" fill="#ffffff" />
+                  <rect x="24.5" y="0" width="5" height="48" fill="#dc2626" />
+                  <rect x="0" y="21" width="54" height="5" fill="#dc2626" />
+                </g>
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#94a3b8; font-weight:600;">Footer Context</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 3 -->
+      <div class="concept-card">
+        <div class="card-header">
+          <div class="card-title">Concept 3: Circular Royal Roundel</div>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">Circular UK flag roundel framed in a subtle navy ring. Highly balanced, corporate, and clean.</p>
+
+          <div class="preview-section-title">Light Navbar Preview (Header)</div>
+          <div class="mockup-light">
+            <div class="logo-container">
+              <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 5px rgba(0,0,0,0.18));">
+                <clipPath id="c3">
+                  <circle cx="24" cy="24" r="22" />
+                </clipPath>
+                <circle cx="24" cy="24" r="23" fill="#012169" stroke="#1e3a63" stroke-width="1.8" />
+                <g clip-path="url(#c3)">
+                  <rect width="48" height="48" fill="#012169" />
+                  <line x1="0" y1="0" x2="48" y2="48" stroke="#ffffff" stroke-width="6.5" />
+                  <line x1="48" y1="0" x2="0" y2="48" stroke="#ffffff" stroke-width="6.5" />
+                  <line x1="0" y1="0" x2="48" y2="48" stroke="#dc2626" stroke-width="2.3" />
+                  <line x1="48" y1="0" x2="0" y2="48" stroke="#dc2626" stroke-width="2.3" />
+                  <rect x="20" y="0" width="8" height="48" fill="#ffffff" />
+                  <rect x="0" y="20" width="48" height="8" fill="#ffffff" />
+                  <rect x="22" y="0" width="4" height="48" fill="#dc2626" />
+                  <rect x="0" y="22" width="48" height="4" fill="#dc2626" />
+                  <circle cx="24" cy="24" r="22" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" fill="none" />
+                </g>
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Navbar Context</span>
+          </div>
+
+          <div class="preview-section-title">Dark Mode Preview (Footer)</div>
+          <div class="mockup-dark">
+            <div class="logo-container">
+              <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));">
+                <circle cx="24" cy="24" r="23" fill="#012169" stroke="#1e3a63" stroke-width="1.8" />
+                <g clip-path="url(#c3)">
+                  <rect width="48" height="48" fill="#012169" />
+                  <line x1="0" y1="0" x2="48" y2="48" stroke="#ffffff" stroke-width="6.5" />
+                  <line x1="48" y1="0" x2="0" y2="48" stroke="#ffffff" stroke-width="6.5" />
+                  <line x1="0" y1="0" x2="48" y2="48" stroke="#dc2626" stroke-width="2.3" />
+                  <line x1="48" y1="0" x2="0" y2="48" stroke="#dc2626" stroke-width="2.3" />
+                  <rect x="20" y="0" width="8" height="48" fill="#ffffff" />
+                  <rect x="0" y="20" width="48" height="8" fill="#ffffff" />
+                  <rect x="22" y="0" width="4" height="48" fill="#dc2626" />
+                  <rect x="0" y="22" width="48" height="4" fill="#dc2626" />
+                  <circle cx="24" cy="24" r="22" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" fill="none" />
+                </g>
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#94a3b8; font-weight:600;">Footer Context</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 4 -->
+      <div class="concept-card">
+        <div class="card-header">
+          <div class="card-title">Concept 4: Classic Rectangular Flag Tag</div>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">Official 2:1 ratio rectangular UK flag with crisp edges and soft drop shadow.</p>
+
+          <div class="preview-section-title">Light Navbar Preview (Header)</div>
+          <div class="mockup-light">
+            <div class="logo-container">
+              <svg width="46" height="25" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 5px rgba(0,0,0,0.18));">
+                <rect width="64" height="32" fill="#012169" />
+                <line x1="0" y1="0" x2="64" y2="32" stroke="#ffffff" stroke-width="5.5" />
+                <line x1="64" y1="0" x2="0" y2="32" stroke="#ffffff" stroke-width="5.5" />
+                <line x1="0" y1="0" x2="64" y2="32" stroke="#dc2626" stroke-width="2" />
+                <line x1="64" y1="0" x2="0" y2="32" stroke="#dc2626" stroke-width="2" />
+                <rect x="27.5" y="0" width="9" height="32" fill="#ffffff" />
+                <rect x="0" y="11.5" width="64" height="9" fill="#ffffff" />
+                <rect x="29.5" y="0" width="5" height="32" fill="#dc2626" />
+                <rect x="0" y="13.5" width="64" height="5" fill="#dc2626" />
+                <rect width="64" height="32" stroke="rgba(0,0,0,0.15)" stroke-width="1" fill="none" />
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Navbar Context</span>
+          </div>
+
+          <div class="preview-section-title">Dark Mode Preview (Footer)</div>
+          <div class="mockup-dark">
+            <div class="logo-container">
+              <svg width="46" height="25" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));">
+                <rect width="64" height="32" fill="#012169" />
+                <line x1="0" y1="0" x2="64" y2="32" stroke="#ffffff" stroke-width="5.5" />
+                <line x1="64" y1="0" x2="0" y2="32" stroke="#ffffff" stroke-width="5.5" />
+                <line x1="0" y1="0" x2="64" y2="32" stroke="#dc2626" stroke-width="2" />
+                <line x1="64" y1="0" x2="0" y2="32" stroke="#dc2626" stroke-width="2" />
+                <rect x="27.5" y="0" width="9" height="32" fill="#ffffff" />
+                <rect x="0" y="11.5" width="64" height="9" fill="#ffffff" />
+                <rect x="29.5" y="0" width="5" height="32" fill="#dc2626" />
+                <rect x="0" y="13.5" width="64" height="5" fill="#dc2626" />
+                <rect width="64" height="32" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none" />
+              </svg>
+
+              <div class="brand-text">
+                <div class="brand-row">
+                  <span class="brand-apex">APEX</span>
+                  <span class="brand-sep">·</span>
+                  <span class="brand-takeoff">TAKEOFF</span>
+                  <span class="brand-uk-badge">UK</span>
+                </div>
+                <div class="brand-sub">RICS NRM2 Takeoffs & Quantity Surveying</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem; color:#94a3b8; font-weight:600;">Footer Context</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="selection-banner">
+      <h3>Which concept do you prefer?</h3>
+      <p>Tell me <strong>Concept 1</strong>, <strong>Concept 2</strong>, <strong>Concept 3</strong>, or <strong>Concept 4</strong>, and I will apply it to the codebase without deploying until you give the green light!</p>
+    </div>
+  </div>
+
+</body>
+</html>
+

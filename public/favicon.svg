@@ -3,42 +3,25 @@
     <clipPath id="favShieldClip">
       <path d="M32 3 L58 12 V32 C58 46.5 45 56 32 61 C19 56 6 46.5 6 32 V12 L32 3 Z"/>
     </clipPath>
-    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#07111e"/>
-      <stop offset="100%" stop-color="#0f233e"/>
-    </linearGradient>
     <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#dc2626"/>
       <stop offset="100%" stop-color="#991b1b"/>
     </linearGradient>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#d97706"/>
-    </linearGradient>
   </defs>
 
   <!-- Outer Shield Outline -->
-  <path d="M32 3 L58 12 V32 C58 46.5 45 56 32 61 C19 56 6 46.5 6 32 V12 L32 3 Z" fill="url(#shieldGrad)" stroke="#1e3a63" stroke-width="2.5" />
+  <path d="M32 3 L58 12 V32 C58 46.5 45 56 32 61 C19 56 6 46.5 6 32 V12 L32 3 Z" fill="#012169" stroke="#1e3a63" stroke-width="2.5" />
 
-  <!-- Authentic UK Union Jack Inset -->
+  <!-- Pure UK Union Jack Shield Fill -->
   <g clip-path="url(#favShieldClip)">
     <rect x="0" y="0" width="64" height="64" fill="#012169" />
-    <!-- White Saltire -->
-    <line x1="0" y1="0" x2="64" y2="64" stroke="#ffffff" stroke-width="8" />
-    <line x1="64" y1="0" x2="0" y2="64" stroke="#ffffff" stroke-width="8" />
-    <!-- Red Saltire -->
-    <line x1="0" y1="0" x2="64" y2="64" stroke="#dc2626" stroke-width="2.8" />
-    <line x1="64" y1="0" x2="0" y2="64" stroke="#dc2626" stroke-width="2.8" />
-    <!-- White Cross -->
-    <rect x="26.5" y="0" width="11" height="64" fill="#ffffff" />
-    <rect x="0" y="26.5" width="64" height="11" fill="#ffffff" />
-    <!-- Red Cross -->
-    <rect x="29" y="0" width="6" height="64" fill="url(#redGrad)" />
-    <rect x="0" y="29" width="64" height="6" fill="url(#redGrad)" />
-    <!-- Apex Chevron / Prism Peak -->
-    <polygon points="32,7 52,32 42,32 32,18 22,32 12,32" fill="#ffffff" opacity="0.95" />
-    <polygon points="32,10 48,30 40,30 32,20 24,30 16,30" fill="url(#redGrad)" />
-    <!-- Gold Surveyor Target Center -->
-    <circle cx="32" cy="32" r="3.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.2" />
+    <line x1="0" y1="0" x2="64" y2="64" stroke="#ffffff" stroke-width="8.5" />
+    <line x1="64" y1="0" x2="0" y2="64" stroke="#ffffff" stroke-width="8.5" />
+    <line x1="0" y1="0" x2="64" y2="64" stroke="#dc2626" stroke-width="3" />
+    <line x1="64" y1="0" x2="0" y2="64" stroke="#dc2626" stroke-width="3" />
+    <rect x="26" y="0" width="12" height="64" fill="#ffffff" />
+    <rect x="0" y="26" width="64" height="12" fill="#ffffff" />
+    <rect x="28.5" y="0" width="7" height="64" fill="url(#redGrad)" />
+    <rect x="0" y="28.5" width="64" height="7" fill="url(#redGrad)" />
   </g>
 </svg>
