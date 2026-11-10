@@ -68,7 +68,7 @@ export function BrandLogo() {
           <span className="brand-uk-badge">UK</span>
         </div>
         <div className="brand-tagline-text">
-          RICS NRM2 Takeoffs & Tender Estimating
+          RICS NRM2 Takeoffs & Estimating
         </div>
       </div>
     </div>

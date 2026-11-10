@@ -355,7 +355,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
 }
 
 /* Custom Shield Brand Logo */
@@ -364,17 +364,18 @@ button {
   user-select: none;
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .custom-brand-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .brand-emblem-svg {
-  width: 46px;
-  height: 42px;
+  width: 42px;
+  height: 38px;
   filter: drop-shadow(0 3px 6px rgba(11, 26, 48, 0.16));
   flex-shrink: 0;
   transition: transform 0.25s ease;
@@ -387,6 +388,7 @@ button {
 .brand-text-block {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
 }
 
 .brand-primary-row {
@@ -394,9 +396,10 @@ button {
   align-items: center;
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: 1.45rem;
+  font-size: clamp(1.2rem, 1.4vw, 1.36rem);
   line-height: 1;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .brand-apex {
@@ -406,7 +409,7 @@ button {
 .brand-sep {
   color: #f59e0b;
   margin: 0 3px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .brand-takeoff {
@@ -426,10 +429,10 @@ button {
 .brand-uk-badge {
   background: linear-gradient(135deg, #dc2626, #b91c1c);
   color: #ffffff;
-  font-size: 0.74rem;
-  padding: 3px 7px;
+  font-size: 0.7rem;
+  padding: 2px 6px;
   border-radius: 4px;
-  margin-left: 6px;
+  margin-left: 5px;
   letter-spacing: 0.08em;
   font-weight: 800;
   box-shadow: 0 2px 6px rgba(220, 38, 38, 0.35);
@@ -437,31 +440,34 @@ button {
 
 .brand-tagline-text {
   font-family: var(--font-heading);
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   font-weight: 700;
   color: #475569;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.07em;
   margin-top: 3px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 /* Nav Menu */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: clamp(10px, 1.3vw, 18px);
+  flex-shrink: 0;
 }
 
 .nav-link {
   font-family: var(--font-heading);
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 0.88vw, 0.85rem);
   font-weight: 600;
   color: var(--text-dark);
   position: relative;
   padding: 6px 0;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
+  white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -482,15 +488,18 @@ button {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .btn-header-cta {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 11px 22px;
-  font-size: 0.9rem;
+  gap: 6px;
+  padding: 9px 18px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .btn-header-cta .cta-arrow {
@@ -1529,6 +1538,16 @@ button {
 
 /* ===================== RESPONSIVE BREAKPOINTS ===================== */
 @media (max-width: 1024px) {
+  .nav-menu {
+    gap: 12px;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+  }
+  .btn-header-cta {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1552,13 +1571,16 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .nav-menu {
     display: none;
   }
   .mobile-toggle {
     display: flex;
   }
+}
+
+@media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
   }
