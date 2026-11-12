@@ -1,105 +1,62 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { BrandLogo } from './Navbar'
 
 export default function Footer() {
-  const scrollTo = (id) => {
-    const el = document.getElementById(id)
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 85
-      window.scrollTo({ top, behavior: 'smooth' })
-    }
-  }
-
   return (
-    <footer className="main-footer">
+    <footer className="main-footer" id="contact">
       <div className="container">
         <div className="footer-top-grid">
-          <div>
-            <div
+          {/* Brand Info */}
+          <div className="footer-brand-col">
+            <Link
+              to="/"
               className="logo-clickable"
-              onClick={() => scrollTo('hero')}
-              role="button"
-              tabIndex={0}
+              style={{ display: 'inline-block', textDecoration: 'none' }}
             >
               <BrandLogo />
-            </div>
+            </Link>
+
             <p className="footer-about-text">
               Apex Takeoff UK is an independent British quantity surveying and commercial cost consultancy. We support Main Contractors, Subcontractors, and Property Developers across England, Scotland, and Wales with verifiable, RICS NRM2 compliant Bills of Quantities and BCIS regional cost models.
             </p>
           </div>
 
+          {/* Quick Navigation */}
           <div>
             <h4 className="footer-col-title">Navigation</h4>
             <ul className="footer-links-list">
-              <li>
-                <a href="#services" onClick={(e) => { e.preventDefault(); scrollTo('services') }}>
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#trades" onClick={(e) => { e.preventDefault(); scrollTo('trades') }}>
-                  Work Packages
-                </a>
-              </li>
-              <li>
-                <a href="#standards" onClick={(e) => { e.preventDefault(); scrollTo('standards') }}>
-                  NRM2 Standards
-                </a>
-              </li>
-              <li>
-                <a href="#process" onClick={(e) => { e.preventDefault(); scrollTo('process') }}>
-                  How It Works
-                </a>
-              </li>
-              <li>
-                <a href="#why-us" onClick={(e) => { e.preventDefault(); scrollTo('why-us') }}>
-                  Why Us
-                </a>
-              </li>
-              <li>
-                <a href="#quote" onClick={(e) => { e.preventDefault(); scrollTo('quote') }}>
-                  Request Quote
-                </a>
-              </li>
+              <li><Link to="/">Overview</Link></li>
+              <li><Link to="/services">Quantity Surveying Services</Link></li>
+              <li><Link to="/trades">Work Packages Covered</Link></li>
+              <li><Link to="/how-it-works">Tender Workflow</Link></li>
+              <li><Link to="/why-us">Why Choose Apex</Link></li>
+              <li><Link to="/takeoff-calculator">Takeoff & Cost Calculator</Link></li>
+              <li><Link to="/contact">Request a Quote</Link></li>
             </ul>
           </div>
 
+          {/* Core NRM2 Packages */}
           <div>
-            <h4 className="footer-col-title">Core Packages</h4>
+            <h4 className="footer-col-title">Trade Packages</h4>
             <ul className="footer-links-list">
-              <li>
-                <a href="#trades" onClick={(e) => { e.preventDefault(); scrollTo('trades') }}>
-                  Groundworks & Civils
-                </a>
-              </li>
-              <li>
-                <a href="#trades" onClick={(e) => { e.preventDefault(); scrollTo('trades') }}>
-                  RC Frame & Steelwork
-                </a>
-              </li>
-              <li>
-                <a href="#trades" onClick={(e) => { e.preventDefault(); scrollTo('trades') }}>
-                  Facades & Envelope
-                </a>
-              </li>
-              <li>
-                <a href="#trades" onClick={(e) => { e.preventDefault(); scrollTo('trades') }}>
-                  Architectural Fit-Out
-                </a>
-              </li>
-              <li>
-                <a href="#trades" onClick={(e) => { e.preventDefault(); scrollTo('trades') }}>
-                  M&E Building Services
-                </a>
-              </li>
+              <li><Link to="/trades#groundworks">Group 1 — Groundworks & Civils</Link></li>
+              <li><Link to="/trades#rc-frame">Group 2 — Substructure & Concrete Frames</Link></li>
+              <li><Link to="/trades#steelwork">Group 3 — Structural Steel & Metalwork</Link></li>
+              <li><Link to="/trades#facades">Group 4 — Facades, Cladding & Masonry</Link></li>
+              <li><Link to="/trades#roofing">Group 4 — Commercial Roofing & Waterproofing</Link></li>
+              <li><Link to="/trades#fitout">Group 4 — Architectural Drylining & Fit-Out</Link></li>
+              <li><Link to="/trades#mep">Group 5 — M&E Building Services</Link></li>
             </ul>
           </div>
 
+          {/* Contact Details */}
           <div>
             <h4 className="footer-col-title">Get In Touch</h4>
             <div className="footer-contact-row">
               <span className="icon">📍</span>
               <div>
+                <strong>Headquarters:</strong><br />
                 100 Oxford Street, London<br />
                 Greater London, W1D 1LL<br />
                 United Kingdom
@@ -115,21 +72,23 @@ export default function Footer() {
             </div>
             <div className="footer-contact-row">
               <span className="icon">🕒</span>
-              <div>Monday – Friday: 8:00 AM – 6:00 PM GMT</div>
+              <div>
+                <strong>Operating Hours:</strong><br />
+                Monday – Friday: 8:00 AM – 6:00 PM GMT
+              </div>
             </div>
           </div>
         </div>
 
+        {/* Bottom Bar */}
         <div className="footer-bottom-bar">
           <div className="footer-bottom-inner">
-            <div>© {new Date().getFullYear()} Apex Takeoff UK. All rights reserved.</div>
-            <div style={{ display: 'flex', gap: '20px' }}>
-              <a href="#privacy" onClick={(e) => e.preventDefault()}>
-                Privacy Policy
-              </a>
-              <a href="#terms" onClick={(e) => e.preventDefault()}>
-                Terms & RICS Measurement Standards
-              </a>
+            <div>
+              © {new Date().getFullYear()} <strong>Apex Takeoff UK</strong>. All rights reserved.
+            </div>
+            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+              <Link to="/terms">Terms &amp; RICS Measurement Standards</Link>
             </div>
           </div>
         </div>
@@ -137,4 +96,3 @@ export default function Footer() {
     </footer>
   )
 }
-

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 /**
  * Custom British Shield & Apex Surveyor Emblem
@@ -63,25 +64,15 @@ export function BrandLogo() {
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [activeItem, setActiveItem] = useState('Services')
-
-  const scrollTo = (id, label) => {
-    setActiveItem(label)
-    const el = document.getElementById(id)
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 85
-      window.scrollTo({ top, behavior: 'smooth' })
-    }
-    setMobileOpen(false)
-  }
+  const location = useLocation()
 
   const navItems = [
-    { label: 'Services', id: 'services' },
-    { label: 'Work Packages', id: 'trades' },
-    { label: 'NRM2 Standards', id: 'standards' },
-    { label: 'How It Works', id: 'process' },
-    { label: 'Why Us', id: 'why-us' },
-    { label: 'Contact', id: 'quote' },
+    { label: 'Services', path: '/services' },
+    { label: 'Work Packages', path: '/trades' },
+    { label: 'How It Works', path: '/how-it-works' },
+    { label: 'Why Us', path: '/why-us' },
+    { label: 'Calculator', path: '/takeoff-calculator' },
+    { label: 'Contact', path: '/contact' },
   ]
 
   return (
@@ -120,42 +111,40 @@ export default function Navbar() {
         <div className="container">
           <div className="nav-inner">
             {/* Logo */}
-            <div
+            <Link
+              to="/"
               className="logo-clickable"
-              onClick={() => scrollTo('hero', 'Overview')}
-              role="button"
-              tabIndex={0}
+              style={{ display: 'inline-block', textDecoration: 'none' }}
+              onClick={() => setMobileOpen(false)}
             >
               <BrandLogo />
-            </div>
+            </Link>
 
-            {/* Essential Navigation Links */}
+            {/* Navigation Links */}
             <ul className="nav-menu">
               {navItems.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={`#${item.id}`}
-                    className={`nav-link ${activeItem === item.label ? 'active' : ''}`}
-                    onClick={(e) => {
-                      e.preventDefault()
-                      scrollTo(item.id, item.label)
-                    }}
+                  <Link
+                    to={item.path}
+                    className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                    onClick={() => setMobileOpen(false)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
 
             {/* Action Button */}
             <div className="nav-actions">
-              <button
+              <Link
+                to="/contact"
                 className="btn btn-red btn-header-cta"
-                onClick={() => scrollTo('quote', 'Contact')}
+                style={{ textDecoration: 'none' }}
               >
                 <span>Request a Quote</span>
                 <span className="cta-arrow">→</span>
-              </button>
+              </Link>
 
               <button
                 className="mobile-toggle"
@@ -174,33 +163,30 @@ export default function Navbar() {
       {/* Modern Accent Border */}
       <div className="header-stripes-modern" />
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Drawer */}
       <div className={`mobile-drawer ${mobileOpen ? 'open' : ''}`}>
         <ul>
           {navItems.map((item) => (
             <li key={item.label}>
-              <a
-                href={`#${item.id}`}
-                className={activeItem === item.label ? 'active' : ''}
-                onClick={(e) => {
-                  e.preventDefault()
-                  scrollTo(item.id, item.label)
-                }}
+              <Link
+                to={item.path}
+                className={location.pathname === item.path ? 'active' : ''}
+                onClick={() => setMobileOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
-        <button
+        <Link
+          to="/contact"
           className="btn btn-red"
-          style={{ width: '100%', marginTop: '14px' }}
-          onClick={() => scrollTo('quote', 'Contact')}
+          style={{ width: '100%', marginTop: '14px', display: 'block', textAlign: 'center', textDecoration: 'none' }}
+          onClick={() => setMobileOpen(false)}
         >
           Request a Quote →
-        </button>
+        </Link>
       </div>
     </header>
   )
 }
-
