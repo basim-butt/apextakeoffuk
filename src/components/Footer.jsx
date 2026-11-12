@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { BrandLogo } from './Navbar'
 
 export default function Footer() {
+  
   return (
     <footer className="main-footer" id="contact">
       <div className="container">
@@ -96,3 +97,4 @@ export default function Footer() {
     </footer>
   )
 }
+

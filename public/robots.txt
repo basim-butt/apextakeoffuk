@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://apextakeoff.co.uk/sitemap.xml
-
+Sitemap: https://apextakeoff.uk/sitemap.xml
+Sitemap: https://www.apextakeoff.uk/sitemap.xml
